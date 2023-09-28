@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bill Splitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="/LOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class = "container center">
+      <div class = "bill-divider-wrapper">
+        <div class = "title">
+          <h1>BILL SPLITTER</h1>
+        </div>
+
+        <div class = "bill-inputs">
+          <form id = "bill-divider-form">
+            <div class = "form-group">
+              <label for = "subtotal">subtotal bill (&#8377,&dollar;)</label>
+              <input type = "number" id = "subtotal" class = "form-control" min = "0" step = "any" required>
+            </div>
+            
+            <div class = "form-group">
+              <label for = "tip">tip (%)</label>
+              <input type = "number" id = "tip" class = "form-control" min = "0" step = "any" required>
+            </div>
+
+            <div class = "form-group">
+              <label for = "no-of-person">no of person</label>
+              <input type = "number" id = "no-of-person" class = "form-control" min = "0" step = "1" required>
+            </div>
+
+            <input type = "submit" id = "calc-btn" value = "calculate">
+          </form>
+        </div>
+
+        <div class = "bill-output">
+          <div class = "text-group">
+            <h3>Total Bill</h3>
+            <span id = "total-bill">$ 00.00</span>
+          </div>
+
+          <div class = "text-group">
+            <h3>Bill Per Person</h3>
+            <span id = "bill-per-person">$ 00.00</span>
+          </div>
+
+          <div class = "text-group">
+            <h3>Total Tip</h3>
+            <span id = "total-tip">$ 00.00</span>
+          </div>
+
+          <div class = "text-group">
+            <h3>Tip Per Person</h3>
+            <span id = "tip-per-person">$ 00.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>

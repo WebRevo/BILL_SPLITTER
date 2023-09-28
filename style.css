@@ -1,0 +1,108 @@
+:root{
+    --space-cadet: #273469;
+    --space-cadet-dark: #1e2749;
+    --lavender-blue: #e4d9ff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif;
+}
+body{
+    line-height: 1.6;
+    background: linear-gradient(180deg, #FF0606 0%, rgba(255, 0, 0, 0.22) 46.88%, rgba(255, 0, 0, 0.17) 49.48%, rgba(255, 0, 0, 0.00) 66.67%, rgba(0, 0, 0, 0.81) 99.99%, rgba(14, 1, 1, 0.00) 100%);
+    font-size: 1.05rem;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    min-height: 100vh;
+}
+.bill-divider-wrapper{
+    max-width: 1080px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+}
+.title{
+    background: linear-gradient(180deg, #E2E2E2 0%, rgba(0, 0, 0, 0.07) 93.23%, rgba(255, 0, 0, 0.00) 100%);
+    padding: 0.7rem 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+.title h1{
+    text-align: center;
+    color: black;
+}
+.bill-inputs, .bill-output{
+    padding: 2rem 2.5rem;
+}
+.bill-inputs{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-group{
+    padding: 0.5rem 0;
+}
+.form-group label{
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+.form-control{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid var(--lavender-blue);
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+.form-control:focus{
+    outline: 0;
+    border-color: var(--space-cadet);
+}
+#calc-btn{
+    padding: 0.9rem 2.2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 1.25rem;
+    background: linear-gradient(180deg, #3F3E3E 38.02%, rgba(0, 0, 0, 0.07) 93.23%, rgba(26, 25, 25, 0.00) 98.96%);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+#calc-btn:focus{
+    outline: 0;
+}
+#calc-btn:hover{
+    background: linear-gradient(180deg, #FF2121 0%, rgba(184, 0, 0, 0.00) 100%);
+}
+.text-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+.text-group h3{
+    font-weight: 400;
+    opacity: 0.8;
+}
+.text-group:nth-child(1) h3{
+    font-weight: 700;
+}
+.text-group span{
+    font-weight: 600;
+}
